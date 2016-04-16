@@ -16,8 +16,8 @@ namespace Calculator
         public  double result;
         public string secondnumber;
         public string text;
-        public int firstnumberint;
-        public int secondnumberint;
+        public double firstnumberdouble;
+        public double secondnumberdouble;
         public bool eventplus;
         public bool eventminus;
         public bool eventmultiply;
@@ -100,7 +100,7 @@ namespace Calculator
             textBox2.Text = textBox1.Text + " - ";
             text = textBox2.Text;
             firstnumber = textBox1.Text;
-            firstnumberint = Convert.ToInt32(firstnumber);
+            firstnumberdouble = Convert.ToDouble(firstnumber);
             textBox1.Text = null;
             eventplus = false;
             eventminus = true;
@@ -117,7 +117,7 @@ namespace Calculator
 
             text = textBox2.Text;
             firstnumber = textBox1.Text;
-            firstnumberint = Convert.ToInt32(firstnumber);
+            firstnumberdouble = Convert.ToDouble(firstnumber);
             textBox1.Text = null;
             eventplus = true;
             eventminus = false;
@@ -133,12 +133,12 @@ namespace Calculator
             
             secondnumber = textBox1.Text;
             textBox2.Text = text + textBox1.Text;
-            secondnumberint = Convert.ToInt32(secondnumber);
+            firstnumberdouble = Convert.ToDouble(secondnumber);
 
             if (eventplus)
             {
 
-                result = Convert.ToDouble(firstnumberint) + Convert.ToDouble(secondnumberint);
+                result = Convert.ToDouble(firstnumber) + Convert.ToDouble(secondnumber);
                 textBox1.Text = result + "";
                 textBox2.Text = textBox2.Text + " = " + textBox1.Text;
             }
@@ -152,7 +152,7 @@ namespace Calculator
             if (eventminus)
             {
 
-                result = Convert.ToDouble(firstnumberint) - Convert.ToDouble(secondnumberint);
+                result = Convert.ToDouble(firstnumber) - Convert.ToDouble(secondnumber);
                 textBox1.Text = result + "";
                 textBox2.Text = textBox2.Text + " = " + textBox1.Text;
                 
@@ -164,7 +164,7 @@ namespace Calculator
             if (eventmultiply)
             {
 
-                result = Convert.ToDouble(firstnumberint) * Convert.ToDouble(secondnumberint);
+                result = Convert.ToDouble(firstnumber) * Convert.ToDouble(secondnumber);
                 textBox1.Text = result + "";
                 textBox2.Text = textBox2.Text + " = " + textBox1.Text;
                 
@@ -176,7 +176,7 @@ namespace Calculator
             if (eventshare)
             {
 
-                result = Convert.ToDouble(firstnumberint) / Convert.ToDouble(secondnumberint);
+                result = Convert.ToDouble(firstnumber) / Convert.ToDouble(secondnumber);
                 textBox1.Text = result + "";
                 textBox2.Text = textBox2.Text + " = " + textBox1.Text;
                 
@@ -200,7 +200,7 @@ namespace Calculator
 
             text = textBox2.Text;
             firstnumber = textBox1.Text;
-            firstnumberint = Convert.ToInt32(firstnumber);
+            firstnumberdouble = Convert.ToDouble(firstnumber);
             textBox1.Text = null;
             eventplus = false;
             eventminus = false;
@@ -214,7 +214,8 @@ namespace Calculator
 
             text = textBox2.Text;
             firstnumber = textBox1.Text;
-            firstnumberint = Convert.ToInt32(firstnumber);
+            firstnumberdouble = Convert.ToDouble(firstnumber);
+            
             textBox1.Text = null;
             eventplus = false;
             eventminus = false;

@@ -12,10 +12,18 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        public string firstnumber;
+        public int result;
+        public string secondnumber;
+        public string text;
+
         public Form1()
         {
             InitializeComponent();
-        }
+           
+           
+
+    }
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -75,13 +83,29 @@ namespace Calculator
 
         private void button17_Click(object sender, EventArgs e)
         {
+            
             textBox1.Text = null;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string plus = textBox1.Text;
-            textBox1.Text = textBox1 + " + ";
+
+            
+            textBox2.Text = textBox1.Text  + " + ";
+           
+            text = textBox2.Text;
+            firstnumber = textBox1.Text;
+            textBox1.Text = null;
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            
+            secondnumber = textBox1.Text;
+            textBox2.Text = text + textBox1.Text;
+            result = Convert.ToInt32(firstnumber) + Convert.ToInt32(secondnumber);
+            textBox1.Text = result + "";
         }
     }
 }

@@ -13,9 +13,9 @@ namespace Calculator
     public partial class Form1 : Form
     {
         public string firstnumber;
-        public  double result;
         public string secondnumber;
         public string text;
+        public double result;
         public double firstnumberdouble;
         public double secondnumberdouble;
         public bool eventplus;
@@ -25,65 +25,72 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
-           
 
-    }
+        }
+
+        //создаем события в TextBox при нажатии кнопки (цыфры)
 
         private void button9_Click(object sender, EventArgs e)
         {
-            int b1 = 1;
-            textBox1.Text = textBox1.Text +  b1 ;
+         
+            textBox1.Text = textBox1.Text + "1" ;
 
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            int b2 = 2;
-            textBox1.Text = textBox1.Text + b2;
+            
+            textBox1.Text = textBox1.Text + "2";
 
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            int b3 = 3;
-            textBox1.Text = textBox1.Text + b3;
+            
+            textBox1.Text = textBox1.Text + "3";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int b4 = 4;
-            textBox1.Text = textBox1.Text + b4;
+            
+            textBox1.Text = textBox1.Text + "4";
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            int b5 = 5;
-            textBox1.Text = textBox1.Text + b5;
+            
+            textBox1.Text = textBox1.Text + "5";
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int b6 = 6;
-            textBox1.Text = textBox1.Text + b6;
+            textBox1.Text = textBox1.Text + "6";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int b7 = 7;
-            textBox1.Text = textBox1.Text + b7;
+            
+            textBox1.Text = textBox1.Text + "7";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int b8 = 8;
-            textBox1.Text = textBox1.Text + b8;
+            
+            textBox1.Text = textBox1.Text + "8";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int b9 = 9;
-            textBox1.Text = textBox1.Text + b9;
+            
+            textBox1.Text = textBox1.Text + "9";
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
+            textBox1.Text = textBox1.Text + "0";
+        }
+
 
         private void button17_Click(object sender, EventArgs e)
         {
@@ -188,12 +195,7 @@ namespace Calculator
 
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            int b0 = 0;
-            textBox1.Text = textBox1.Text + b0;
-        }
-
+     
         private void button12_Click(object sender, EventArgs e)
         {
             textBox2.Text = textBox1.Text + " * ";
@@ -221,6 +223,11 @@ namespace Calculator
             eventminus = false;
             eventmultiply = false;
             eventshare = true;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + ",";
         }
     }
 }

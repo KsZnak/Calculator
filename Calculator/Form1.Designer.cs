@@ -239,6 +239,7 @@
             this.button14.TabIndex = 14;
             this.button14.Text = ".";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -285,10 +286,10 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(12, 22);
+            this.textBox2.Location = new System.Drawing.Point(12, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 22);
+            this.textBox2.Size = new System.Drawing.Size(261, 40);
             this.textBox2.TabIndex = 18;
             // 
             // Form1

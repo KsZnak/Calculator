@@ -213,6 +213,7 @@
             this.button12.TabIndex = 12;
             this.button12.Text = "*";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -263,6 +264,7 @@
             this.button16.TabIndex = 16;
             this.button16.Text = "/";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 

@@ -16,11 +16,12 @@ namespace Calculator
         public int result;
         public string secondnumber;
         public string text;
-
+        public int firstnumberint;
+        public int secondnumberint;
+        public bool eventplus;
         public Form1()
         {
             InitializeComponent();
-           
            
 
     }
@@ -95,7 +96,11 @@ namespace Calculator
            
             text = textBox2.Text;
             firstnumber = textBox1.Text;
+            firstnumberint = Convert.ToInt32(firstnumber);
             textBox1.Text = null;
+            eventplus = true;
+           
+
 
         }
 
@@ -104,8 +109,29 @@ namespace Calculator
             
             secondnumber = textBox1.Text;
             textBox2.Text = text + textBox1.Text;
-            result = Convert.ToInt32(firstnumber) + Convert.ToInt32(secondnumber);
-            textBox1.Text = result + "";
+            secondnumberint = Convert.ToInt32(secondnumber);
+
+            if (eventplus)
+            {
+
+                result = firstnumberint + secondnumberint;
+                textBox1.Text = result + "";
+            }
+            else
+
+                result = 0; 
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            int b0 = 0;
+            textBox1.Text =  b0 + textBox1.Text;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

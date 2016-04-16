@@ -161,6 +161,7 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "-";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -224,6 +225,7 @@
             this.button13.TabIndex = 13;
             this.button13.Text = "0";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -277,6 +279,10 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(12, 22);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -307,6 +313,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
